@@ -1,0 +1,7 @@
+.idea/
+venv/
+/dist/
+/output/result.csv
+/output/result_sampled.csv
+/output/generate_log.txt
+/output/simulate_log.txt
