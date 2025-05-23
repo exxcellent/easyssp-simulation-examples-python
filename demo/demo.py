@@ -10,15 +10,14 @@ from simulation_operations import (
     poll_status_until_finished,
 )
 from start_simulation_config_json import start_simulation_json_config
-
-USER_AGENT = "easyssp-simulation-examples-python"
+from demo_config import USER_AGENT, EASYSSP_USERNAME, EASYSSP_PASSWORD
 
 with (
     open("../input/simulation_example.ssp", "rb") as ssp_file,
     open("../input/exampleStimuli.csv", "rb") as stimuli_file
 ):
     try:
-        simulation_client = SimulationClient(username="your_easyssp_username", password="your_easyssp_password",
+        simulation_client = SimulationClient(username=EASYSSP_USERNAME, password=EASYSSP_PASSWORD,
                                              user_agent=USER_AGENT)
 
         # get simulation info and create start configuration

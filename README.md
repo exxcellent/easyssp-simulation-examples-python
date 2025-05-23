@@ -24,6 +24,7 @@ API or building production workflows, these scripts will help you get started qu
 ```bash
 easyssp-simulation-examples-python/
 ├── demo.py                          # Run a basic scenario
+├── demo_config.py                   # User agent and easySSP username and password config.
 ├── simulation_operations.py         # Helper functions for polling simulation status, downloading results, etc.
 ├── start_simulation_config_json.py  # JSON representation of a start simulation configuration
 ├── input/
@@ -71,8 +72,7 @@ uv sync
 
 ## 3. Provide your login credentials
 
-In the `demo.py` file, replace `your_easyssp_username` and `your_easyssp_password` with your real easySSP credentials
-to start the demo.
+In the `demo_config.py` file, provide your easySSP credentials to start the demo.
 
 ---
 
