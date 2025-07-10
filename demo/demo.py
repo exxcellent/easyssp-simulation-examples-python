@@ -11,6 +11,7 @@ from simulation_operations import (
 )
 from start_simulation_config_json import start_simulation_json_config
 from demo_config import USER_AGENT, EASYSSP_USERNAME, EASYSSP_PASSWORD
+import traceback
 
 with (
     open("../input/simulation_example.ssp", "rb") as ssp_file,
@@ -54,4 +55,4 @@ with (
     # catch ValidationError for incorrect request parameters
     # catch ApiException for errors from the API client or the server
     except (AuthError, ApiException, ValidationError) as ex:
-        print(ex)
+        traceback.print_exc()
